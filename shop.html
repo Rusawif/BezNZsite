@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин — Студия БезН</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom, #111, #000);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #fff;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #fff;
+    }
+
+    .shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .item-card {
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px #00ffcc33;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .item-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00ffcc99;
+    }
+
+    .item-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 2px solid #00ffcc33;
+    }
+
+    .item-card .info {
+      padding: 15px;
+    }
+
+    .item-card .info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .item-card .info p {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #ccc;
+    }
+
+    .item-card .info button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #00ffcc;
+      color: #000;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .item-card .info button:hover {
+      background: #00ccaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #000;
+      border-top: 2px solid #00ffcc44;
+      color: #999;
+    }
+      .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #00aaff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Магазин Студии БезН</h1>
+    <a href="index.html" class="back-link">← На главную</a>
+  </header>
+
+  <section class="shop-container">
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+1" alt="Товар 1" />
+      <div class="info">
+        <h3>Озвучка ролика</h3>
+        <p>Профессиональная озвучка для видео, игр, рекламы.</p>
+        <button>Заказать — 1500₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+2" alt="Товар 2" />
+      <div class="info">
+        <h3>Создание интро</h3>
+        <p>Короткое интро для YouTube или TikTok с голосом и эффектами.</p>
+        <button>Заказать — 1000₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+3" alt="Товар 3" />
+      <div class="info">
+        <h3>Музыка под заказ</h3>
+        <p>Создание уникального трека под ваш проект или игру.</p>
+        <button>Заказать — 2000₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+4" alt="Товар 4" />
+      <div class="info">
+        <h3>Озвучка персонажей</h3>
+        <p>Разные голоса и эмоции для героев и NPC.</p>
+        <button>Заказать — 1700₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+5" alt="Товар 5" />
+      <div class="info">
+        <h3>Звукорежиссура</h3>
+        <p>Полная обработка и микширование вашего звука.</p>
+        <button>Заказать — 2500₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+6" alt="Товар 6" />
+      <div class="info">
+        <h3>Дикторская начитка</h3>
+        <p>Голос для рекламы, презентаций и видеоуроков.</p>
+        <button>Заказать — 1200₽</button>
+      </div>
+    </div>
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+7" alt="Товар 7" />
+      <div class="info">
+        <h3>Подкаст под ключ</h3>
+        <p>Запись, монтаж и оформление подкаста.</p>
+        <button>Заказать — 3000₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+8" alt="Товар 8" />
+      <div class="info">
+        <h3>Эффекты для видео</h3>
+        <p>Звуковые эффекты для монтажа и интро.</p>
+        <button>Заказать — 800₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+9" alt="Товар 9" />
+      <div class="info">
+        <h3>Готовый голосовой пакет</h3>
+        <p>Записи для игр, приложений и ассистентов.</p>
+        <button>Заказать — 2200₽</button>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Товар+10" alt="Товар 10" />
+      <div class="info">
+        <h3>Озвучка аниме</h3>
+        <p>Профессиональная озвучка персонажей в стиле аниме.</p>
+        <button>Заказать — 1800₽</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Студия БезН — Все права защищены
+  </footer>
+</body>
+</html>

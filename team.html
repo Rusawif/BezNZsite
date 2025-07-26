@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Наша команда — Студия БезН</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #00bcd4;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      box-shadow: 0 0 25px rgba(0, 188, 212, 0.5);
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #00bcd4;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+    }
+
+    .member p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    .back {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: #00bcd4;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Наша команда</h1>
+
+  <div class="team-container">
+    <div class="member">
+      <img src="https://via.placeholder.com/120" alt="Участник">
+      <h3>Руся</h3>
+      <p>Основатель и голос студии</p>
+    </div>
+    <div class="member">
+      <img src="https://via.placeholder.com/120" alt="Участник">
+      <h3>Соня</h3>
+      <p>Звукорежиссёр и монтаж</p>
+    </div>
+    <div class="member">
+      <img src="https://via.placeholder.com/120" alt="Участник">
+      <h3>Гога</h3>
+      <p>Сценарист и арт-директор</p>
+    </div>
+  </div>
+
+  <div class="back">
+    <a href="index.html">← Назад на главную</a>
+  </div>
+</body>
+</html>
