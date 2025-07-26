@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Наша команда — Студия БезН</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #121212;
       color: #ffffff;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 20px;
+      min-height: 100vh;
     }
 
     h1 {
@@ -24,14 +29,15 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
     }
 
     .member {
       background-color: #1e1e1e;
       border-radius: 10px;
       padding: 20px;
-      width: 280px;
+      width: 100%;
+      max-width: 280px;
       box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
       text-align: center;
       transition: 0.3s;
@@ -72,6 +78,25 @@
       font-weight: bold;
       font-size: 1rem;
     }
+
+    /* Адаптивность */
+    @media (min-width: 480px) {
+      .member {
+        width: 45%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .member {
+        width: 30%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .member {
+        width: 22%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -94,12 +119,6 @@
     <div class="member"><img src="https://via.placeholder.com/120" alt="Участник"><h3>Рита</h3><p>Сценарист</p></div>
     <div class="member"><img src="https://via.placeholder.com/120" alt="Участник"><h3>Антон</h3><p>Музыкальный продюсер</p></div>
   </div>
-
-  <div class="back">
-    <a href="index.html">← Назад на главную</a>
-  </div>
-</body>
-</html>
 
   <div class="back">
     <a href="index.html">← Назад на главную</a>
